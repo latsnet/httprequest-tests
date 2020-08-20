@@ -18,8 +18,11 @@ namespace ConsoleApp1
             // var request = new TesteWebRequest(url, apikey, userName, password);
             // request.Execute();
 
-            var request = new TesteHttpClient(url, apikey, userName, password);
-            Task.WaitAll(request.ExecuteAsync());
+            // var request = new TesteHttpClient(url, apikey, userName, password);
+            // Task.WaitAll(request.ExecuteAsync());
+
+            var request = new TesteRestSharp(url, apikey, userName, password);
+            request.Execute();
 
         }
 
